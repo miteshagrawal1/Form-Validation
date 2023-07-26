@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+     
+    </style>
+    <!-- <script src="js.js"></script> -->
+</head>
+
+<body>
+    <div class="form">
+        <form id="form">
+            <div class="container">
+
+                <h1 style="text-align: center;">Registration</h1>
+                Username: <input type="text" name="" placeholder="Enter username" id="username"
+                    onkeyup="validatename()"><span id="nameerror"></span><br>
+
+                Email: <input type="email" name="" placeholder="Enter your mail id" id="email"
+                    onkeyup="validateemail()"><span id="emailerror"></span><br>
+
+                Phone no: <input type="tel" name="" placeholder="Enter your number" id="number"
+                    onkeyup="validatenumber()"><span id="numbererror"></span><br>
+
+                Password: <input type="password" name="" placeholder="Enter password" id="password"
+                    onkeyup="validatepassword()"><span id="passworderror"></span><br>
+
+                <button id="btn" onclick="return validateform()"> Sign-up </button><br>
+                <span id="submiterror"></span>
+
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
